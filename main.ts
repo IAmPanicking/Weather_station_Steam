@@ -10,19 +10,5 @@ basic.forever(function () {
     temp = BME688.temperature()
     hum = BME688.humidity()
     press = BME688.pressure()
-    gas = BME688.gasResistance()
-    // 3. Patikrinimui siunčiame į Data Device
-    serial.writeValue("Temperature", temp)
-    serial.writeValue("Humidity", hum)
-    serial.writeValue("Pressure", press)
-    serial.writeValue("Gas", gas)
-    // 4. Tas pačias reikšmes įrašome į Data Logger
-    datalogger.log(
-    datalogger.createCV("Temperature", temp),
-    datalogger.createCV("Humidity", hum),
-    datalogger.createCV("Pressure", press),
-    datalogger.createCV("Gas", gas)
-    )
-    // 5. Naujas matavimas kas 2 sekundes
-    basic.pause(2000)
+    gas = BME688.gasResistance()    
 })
