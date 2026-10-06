@@ -650,7 +650,7 @@ namespace BME688 {
     export function gasResistance(): number {
 
         return Math.round(
-            gasResistanceValue
+            gasResistanceValue / 1000
         )
     }
 }
