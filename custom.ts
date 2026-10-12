@@ -645,7 +645,7 @@ namespace BME688 {
     }
 
 
-    //% block="gas resistance Ω"
+    //% block="gas resistance kΩ"
     //% weight=50
     export function gasResistance(): number {
 
