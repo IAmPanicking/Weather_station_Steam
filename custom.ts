@@ -625,7 +625,7 @@ namespace BME688 {
     }
 
 
-    //% block="humidity %"
+    //% block="humidity %%"
     //% weight=70
     export function humidity(): number {
 
